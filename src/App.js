@@ -4,10 +4,11 @@ import React from 'react';
 import { Page } from './stories/Page.jsx';
 import SearchBar from './stories/SearchBar';
 //import MyButton from './stories/MyButton';
-import MyButton from './stories/MySelectBox';
+import ButtonWrap from './stories/ButtonWrap';
 
 function App() {
-	return <MyButton />;
+  const list = ['이름', '나이', '성별', '직업'];
+  return <ButtonWrap data={list} />;
 }
 
 export default App;
